@@ -11,13 +11,13 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 2000 }
 	default = no
 	focus = {
-		id = GOD_call_aivert
+		id = tia_call_aivert
 		icon = GFX_goal_generic_radar
 		cost = 2.00
 		mutually_exclusive = {
-			focus = GOD_call_lena
-			focus = GOD_call_shilfiranlina
-			focus = GOD_font_look_sitaution
+			focus = tia_call_lena
+			focus = tia_call_shilfiranlina
+			focus = tia_font_look_sitaution
 		}
 		x = 2
 		y = 0
@@ -26,7 +26,7 @@ focus_tree = {
 							ideology = communism
 							popularity = 0.03
 						}
-					country_event = { id = nsgodworld.16 }
+					country_event = { id = nstiaworld.16 }
 				}
 
 	}

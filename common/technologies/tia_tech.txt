@@ -10,30 +10,30 @@ technologies = {#天衍宗科技树
 	@1944 = 16
 	@1945 = 18
 	@1946 = 20Z
-	god_power_gun_weapons = {#神力加持步枪
+	tia_power_gun_weapons = {#神力加持步枪
 
 		enable_equipments = {
-			god_power_gun_equipment_0
+			tia_power_gun_equipment_0
 		}
 		
 		enable_subunits = {
-			god_infantry
+			tia_infantry
 		}
 		
 		path = {
-			leads_to_tech = god_power_gun_weapons1
+			leads_to_tech = tia_power_gun_weapons1
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = -1 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -41,26 +41,26 @@ technologies = {#天衍宗科技树
 			factor = 1
 		}
 	}
-	god_power_gun_weapons1 = {#神力加持中级步枪
+	tia_power_gun_weapons1 = {#神力加持中级步枪
 
 		enable_equipments = {
-			god_power_gun_equipment_1
+			tia_power_gun_equipment_1
 		}
 				
 		path = {
-			leads_to_tech = god_power_gun_weapons2
+			leads_to_tech = tia_power_gun_weapons2
 			research_cost_coeff = 1
 		}		
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -72,7 +72,7 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_gun_weapons2 = {#神力加持高级步枪
+	tia_power_gun_weapons2 = {#神力加持高级步枪
 		category_all_infantry = {
 			soft_attack = 0.07
 		}
@@ -80,16 +80,16 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1938
 		path = {
-			leads_to_tech = god_power_improved_gun_weapons
+			leads_to_tech = tia_power_improved_gun_weapons
 			research_cost_coeff = 1
 		}		
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1938 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -102,30 +102,30 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_improved_gun_weapons = {#神力初级步枪
+	tia_power_improved_gun_weapons = {#神力初级步枪
 
 		enable_equipments = {
-			god_power_gun_equipment_2
+			tia_power_gun_equipment_2
 		}
 		
 		path = {
-			leads_to_tech = god_power_improved_gun_weapons_2
+			leads_to_tech = tia_power_improved_gun_weapons_2
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = god_power_gun_at
+			leads_to_tech = tia_power_gun_at
 			research_cost_coeff = 1
 		}		
 
 		research_cost = 2
 		start_year = 1939
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -142,25 +142,25 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_improved_gun_weapons_2 = {#神力中级步枪
+	tia_power_improved_gun_weapons_2 = {#神力中级步枪
 		category_all_infantry = {
 			soft_attack = 0.07
 		}
 		
 		path = {
-			leads_to_tech = god_power_advanced_gun_weapons
+			leads_to_tech = tia_power_advanced_gun_weapons
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
 		start_year = 1940
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -184,26 +184,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_gun_at = {#神力穿透实验
+	tia_power_gun_at = {#神力穿透实验
 		category_all_infantry = {
 			hard_attack = 0.07
 			ap_attack = 0.3
 		}
 		
 		path = {
-			leads_to_tech = god_power_gun_at2
+			leads_to_tech = tia_power_gun_at2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 2 y = @1942 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -227,7 +227,7 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_gun_at2 = {#神力穿透高级实验
+	tia_power_gun_at2 = {#神力穿透高级实验
 		category_all_infantry = {
 			hard_attack = 0.07
 			ap_attack = 0.3
@@ -236,12 +236,12 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1943
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 2 y = @1943 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -265,26 +265,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_advanced_gun_weapons = {#神力初级装备
+	tia_power_advanced_gun_weapons = {#神力初级装备
 
 		enable_equipments = {
-			god_power_gun_equipment_3
+			tia_power_gun_equipment_3
 		}	
 		
 		path = {
-			leads_to_tech = god_power_advanced_gun_weapons2
+			leads_to_tech = tia_power_advanced_gun_weapons2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
 		start_year = 1942
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -302,7 +302,7 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_advanced_gun_weapons2 = {#魔力增压
+	tia_power_advanced_gun_weapons2 = {#魔力增压
 		category_all_infantry = {
 			soft_attack = 0.15
 		}		
@@ -310,12 +310,12 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1944
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1944 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -339,24 +339,24 @@ technologies = {#天衍宗科技树
 		}
 	}
 
-	god_power_night_vision = {#夜明术
+	tia_power_night_vision = {#夜明术
 
 		land_night_attack = 0.15
 		
 		path = {
-			leads_to_tech = god_power_night_vision2
+			leads_to_tech = tia_power_night_vision2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2.5
 		start_year = 1943
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1943 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			night_vision
 		}
 		
@@ -385,19 +385,19 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_night_vision2 = {#昏暗视觉
+	tia_power_night_vision2 = {#昏暗视觉
 
 		land_night_attack = 0.15	
 
 		research_cost = 2
 		start_year = 1946
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1946 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			night_vision
 		}
 		
@@ -421,26 +421,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 
-	god_power_support_weapons = {#钢化术
+	tia_power_support_weapons = {#钢化术
 		category_all_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		
 		path = {
-			leads_to_tech = god_power_support_weapons2
+			leads_to_tech = tia_power_support_weapons2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1918 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -467,26 +467,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_support_weapons2 = {#火焰战袍
+	tia_power_support_weapons2 = {#火焰战袍
 		category_all_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		
 		path = {
-			leads_to_tech = god_power_support_weapons3
+			leads_to_tech = tia_power_support_weapons3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1938
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1938 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -519,26 +519,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_support_weapons3 = {#法师护盾
+	tia_power_support_weapons3 = {#法师护盾
 		category_all_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
 		
 		path = {
-			leads_to_tech = god_power_support_weapons4
+			leads_to_tech = tia_power_support_weapons4
 			research_cost_coeff = 1
 		}
 		
 		research_cost = 1.5
 		start_year = 1940
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1940 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -571,7 +571,7 @@ technologies = {#天衍宗科技树
 		}
 	}
 	
-	god_power_support_weapons4 = {#不屈意志
+	tia_power_support_weapons4 = {#不屈意志
 		category_all_infantry = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -581,12 +581,12 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -618,26 +618,26 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_small_weapons = {#小型神能坦克炮
+	tia_power_tank_small_weapons = {#小型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_small_1
+			tia_tank_small_1
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_small_weapons2
+			leads_to_tech = tia_power_tank_small_weapons2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = -1 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -645,26 +645,26 @@ technologies = {#天衍宗科技树
 			factor = 1
 		}
 	}
-	god_power_tank_small_weapons2 = {#中型神能坦克炮
+	tia_power_tank_small_weapons2 = {#中型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_small_2
+			tia_tank_small_2
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_small_weapons3
+			leads_to_tech = tia_power_tank_small_weapons3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -676,26 +676,26 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_small_weapons3 = {#高型神能坦克炮
+	tia_power_tank_small_weapons3 = {#高型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_small_3
+			tia_tank_small_3
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_small_weapons4
+			leads_to_tech = tia_power_tank_small_weapons4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -707,10 +707,10 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_small_weapons4 = {#终型神能坦克炮
+	tia_power_tank_small_weapons4 = {#终型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_small_4
+			tia_tank_small_4
 		}
 		
 		path = {
@@ -720,12 +720,12 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -738,26 +738,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 
-	god_power_tank_medium_weapons = {#小型神能坦克炮
+	tia_power_tank_medium_weapons = {#小型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_medium_1
+			tia_tank_medium_1
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_medium_weapons2
+			leads_to_tech = tia_power_tank_medium_weapons2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = -1 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -765,26 +765,26 @@ technologies = {#天衍宗科技树
 			factor = 1
 		}
 	}
-	god_power_tank_medium_weapons2 = {#中型神能坦克炮
+	tia_power_tank_medium_weapons2 = {#中型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_medium_2
+			tia_tank_medium_2
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_medium_weapons3
+			leads_to_tech = tia_power_tank_medium_weapons3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -796,26 +796,26 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_medium_weapons3 = {#高型神能坦克炮
+	tia_power_tank_medium_weapons3 = {#高型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_medium_3
+			tia_tank_medium_3
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_medium_weapons4
+			leads_to_tech = tia_power_tank_medium_weapons4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -827,10 +827,10 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_medium_weapons4 = {#终型神能坦克炮
+	tia_power_tank_medium_weapons4 = {#终型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_medium_4
+			tia_tank_medium_4
 		}
 		
 		path = {
@@ -840,12 +840,12 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -858,26 +858,26 @@ technologies = {#天衍宗科技树
 		}
 	}
 
-	god_power_tank_heavy_weapons = {#小型神能坦克炮
+	tia_power_tank_heavy_weapons = {#小型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_heavy_1
+			tia_tank_heavy_1
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_heavy_weapons2
+			leads_to_tech = tia_power_tank_heavy_weapons2
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1918
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = -1 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -885,26 +885,26 @@ technologies = {#天衍宗科技树
 			factor = 1
 		}
 	}
-	god_power_tank_heavy_weapons2 = {#中型神能坦克炮
+	tia_power_tank_heavy_weapons2 = {#中型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_heavy_2
+			tia_tank_heavy_2
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_heavy_weapons3
+			leads_to_tech = tia_power_tank_heavy_weapons3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1936
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1936 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -916,26 +916,26 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_heavy_weapons3 = {#高型神能坦克炮
+	tia_power_tank_heavy_weapons3 = {#高型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_heavy_3
+			tia_tank_heavy_3
 		}
 		
 		path = {
-			leads_to_tech = god_power_tank_heavy_weapons4
+			leads_to_tech = tia_power_tank_heavy_weapons4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1.5
 		start_year = 1939
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1939 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		
@@ -947,10 +947,10 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	god_power_tank_heavy_weapons4 = {#终型神能坦克炮
+	tia_power_tank_heavy_weapons4 = {#终型神能坦克炮
 
 		enable_equipment_modules = {
-			god_tank_heavy_4
+			tia_tank_heavy_4
 		}
 		
 		path = {
@@ -960,12 +960,12 @@ technologies = {#天衍宗科技树
 		research_cost = 1.5
 		start_year = 1942
 		folder = {
-			name = god_infantry
+			name = tia_infantry
 			position = { x = 0 y = @1942 }
 		}
 		
 		categories = {
-			god_infantry_weapons
+			tia_infantry_weapons
 			infantry_weapons
 		}
 		

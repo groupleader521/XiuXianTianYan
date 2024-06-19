@@ -9,7 +9,7 @@ country_event = {
 	id = tianyan.1
 	title = tianyan.1.t
 	desc = tianyan.1.d
-	#picture = GFX_events_cegodworld
+	#picture = GFX_events_cetiaworld
 	immediate = {
 		
 	}
