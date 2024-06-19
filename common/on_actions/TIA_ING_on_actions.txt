@@ -1,0 +1,14 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					is_ai =no
+					tag =TIA
+				}
+				country_event = { id = tianyan.1 }
+			}
+		}
+	}
+	
+}

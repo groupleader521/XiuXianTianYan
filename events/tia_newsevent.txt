@@ -1,0 +1,15 @@
+﻿add_namespace = ntianyan
+news_event = {
+	id = ntianyan.1
+	title = ntianyan.1.t
+	desc = ntianyan.1.d
+	#picture = GFX_events_cegodworld
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ntianyan.1.a
+	}
+}

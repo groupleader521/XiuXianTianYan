@@ -1,0 +1,32 @@
+﻿###########################
+# 天衍宗的事件
+###########################
+
+add_namespace = tianyan
+
+# Japanese Stage Border Incident
+country_event = {
+	id = tianyan.1
+	title = tianyan.1.t
+	desc = tianyan.1.d
+	#picture = GFX_events_cegodworld
+	immediate = {
+		
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	#只能被触发
+	is_triggered_only = no
+	#只能一次
+	fire_only_once = yes
+	
+	trigger = {
+		#always = yes
+		tag = tia
+	}
+	
+	option = {
+		name = tianyan.1.a
+	}
+}

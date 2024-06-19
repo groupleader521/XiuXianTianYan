@@ -116,8 +116,17 @@ if = {
 			type = annex_everything
 		}
 	}
+	TIA = {
+		country_event = {
+			id = ntianyan.1
+	   }
+	}
+	
+	
 	
 }
+
+
 #添加角色
 #recruit_character = 
 
