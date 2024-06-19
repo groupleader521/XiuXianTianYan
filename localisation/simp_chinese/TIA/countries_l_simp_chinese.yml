@@ -1,0 +1,19 @@
+﻿#天衍宗的国家本地化
+l_simp_chinese:
+ TIA_fascism:0 "天衍宗"
+ TIA_fascism_DEF:0 "天衍宗"
+ TIA_democratic:0 "天衍宗"
+ TIA_democratic_DEF:0 "天衍宗"
+ TIA_neutrality:1 "天衍宗"
+ TIA_neutrality_DEF:1 "天衍宗"
+ TIA_communism:0 "天衍宗"
+ TIA_communism_DEF:0 "天衍宗"
+ TIA_fascism_ADJ:0 "天衍宗"
+ TIA_democratic_ADJ:0 "天衍宗"
+ TIA_neutrality_ADJ:0 "天衍宗"
+ TIA_communism_ADJ:0 "天衍宗"
+ TIA:0 "天衍宗"
+ TIA_DEF:0 "天衍宗"
+ TIA_ADJ:0 "天衍宗"
+ TIA_GATHERING_STORM_DESC:0 "天衍宗"
+ 
