@@ -1,0 +1,980 @@
+technologies = {#天衍宗科技树
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20Z
+	god_power_gun_weapons = {#神力加持步枪
+
+		enable_equipments = {
+			god_power_gun_equipment_0
+		}
+		
+		enable_subunits = {
+			god_infantry
+		}
+		
+		path = {
+			leads_to_tech = god_power_gun_weapons1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	god_power_gun_weapons1 = {#神力加持中级步枪
+
+		enable_equipments = {
+			god_power_gun_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = god_power_gun_weapons2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1936.1.3"
+			}
+		}
+	}
+	god_power_gun_weapons2 = {#神力加持高级步枪
+		category_all_infantry = {
+			soft_attack = 0.07
+		}
+		
+		research_cost = 1.5
+		start_year = 1938
+		path = {
+			leads_to_tech = god_power_improved_gun_weapons
+			research_cost_coeff = 1
+		}		
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+	god_power_improved_gun_weapons = {#神力初级步枪
+
+		enable_equipments = {
+			god_power_gun_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = god_power_improved_gun_weapons_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = god_power_gun_at
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 2
+		start_year = 1939
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 3
+						
+			modifier = {
+				factor = 10
+				date > "1939.1.1"
+			}
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	god_power_improved_gun_weapons_2 = {#神力中级步枪
+		category_all_infantry = {
+			soft_attack = 0.07
+		}
+		
+		path = {
+			leads_to_tech = god_power_advanced_gun_weapons
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1942.1.1"
+			}
+		}
+	}
+	
+	god_power_gun_at = {#神力穿透实验
+		category_all_infantry = {
+			hard_attack = 0.07
+			ap_attack = 0.3
+		}
+		
+		path = {
+			leads_to_tech = god_power_gun_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = god_infantry
+			position = { x = 2 y = @1942 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+		}
+	}
+	
+	god_power_gun_at2 = {#神力穿透高级实验
+		category_all_infantry = {
+			hard_attack = 0.07
+			ap_attack = 0.3
+		}
+		
+		research_cost = 1.5
+		start_year = 1943
+		folder = {
+			name = god_infantry
+			position = { x = 2 y = @1943 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+		}
+	}
+	
+	god_power_advanced_gun_weapons = {#神力初级装备
+
+		enable_equipments = {
+			god_power_gun_equipment_3
+		}	
+		
+		path = {
+			leads_to_tech = god_power_advanced_gun_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 0.8
+			modifier = {
+				num_of_military_factories > 150
+				factor = 2.5
+			}
+			
+			modifier = {
+				num_of_military_factories < 50
+				factor = 0.5
+			}
+		}
+	}
+	
+	god_power_advanced_gun_weapons2 = {#魔力增压
+		category_all_infantry = {
+			soft_attack = 0.15
+		}		
+
+		research_cost = 1.5
+		start_year = 1944
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1944 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+		}
+	}
+
+	god_power_night_vision = {#夜明术
+
+		land_night_attack = 0.15
+		
+		path = {
+			leads_to_tech = god_power_night_vision2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1943
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1943 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1943.1.6"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.1"
+			}
+		}
+	}
+	
+	god_power_night_vision2 = {#昏暗视觉
+
+		land_night_attack = 0.15	
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1946 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			night_vision
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.9"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1946.1.1"
+			}
+			
+			modifier = {
+				factor = 5
+				date > "1946.1.6"
+			}
+		}
+	}
+
+	god_power_support_weapons = {#钢化术
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = god_power_support_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1918 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	god_power_support_weapons2 = {#火焰战袍
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = god_power_support_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1938
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1938 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	god_power_support_weapons3 = {#法师护盾
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = god_power_support_weapons4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1940 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1940.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1941.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	
+	god_power_support_weapons4 = {#不屈意志
+		category_all_infantry = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
+		
+		
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1942.1.6"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1943.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1944.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1945.1.1"
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+	}
+	god_power_tank_small_weapons = {#小型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_small_1
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_small_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	god_power_tank_small_weapons2 = {#中型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_small_2
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_small_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1936.1.3"
+			}
+		}
+	}
+	god_power_tank_small_weapons3 = {#高型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_small_3
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_small_weapons4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1939.1.3"
+			}
+		}
+	}
+	god_power_tank_small_weapons4 = {#终型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_small_4
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1942.1.3"
+			}
+		}
+	}
+
+	god_power_tank_medium_weapons = {#小型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_medium_1
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_medium_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	god_power_tank_medium_weapons2 = {#中型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_medium_2
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_medium_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1936.1.3"
+			}
+		}
+	}
+	god_power_tank_medium_weapons3 = {#高型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_medium_3
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_medium_weapons4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1939.1.3"
+			}
+		}
+	}
+	god_power_tank_medium_weapons4 = {#终型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_medium_4
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1942.1.3"
+			}
+		}
+	}
+
+	god_power_tank_heavy_weapons = {#小型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_heavy_1
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_heavy_weapons2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1918
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = -1 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	god_power_tank_heavy_weapons2 = {#中型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_heavy_2
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_heavy_weapons3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1936
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1936 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1936.1.3"
+			}
+		}
+	}
+	god_power_tank_heavy_weapons3 = {#高型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_heavy_3
+		}
+		
+		path = {
+			leads_to_tech = god_power_tank_heavy_weapons4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1939
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1939 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1939.1.3"
+			}
+		}
+	}
+	god_power_tank_heavy_weapons4 = {#终型神能坦克炮
+
+		enable_equipment_modules = {
+			god_tank_heavy_4
+		}
+		
+		path = {
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1942
+		folder = {
+			name = god_infantry
+			position = { x = 0 y = @1942 }
+		}
+		
+		categories = {
+			god_infantry_weapons
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				date > "1942.1.3"
+			}
+		}
+	}
+}
