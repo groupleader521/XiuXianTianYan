@@ -1,0 +1,32 @@
+guiTypes = {
+	containerWindowType = {
+		name = "CTM_xiuxian_tree"
+		position = {x=150 y=100}
+		size = {width=500 height=170}
+		clipping = yes
+		moveable = yes
+	
+		verticalScrollbar = "right_vertical_slider"
+		margin = {top = 0 bottom=2}
+		gridboxtype = {
+			name = "XiuXian_grid"
+			position = {x=-20 y=-5}
+			max_slots_vertical = 1
+			slotsize = {width=1 height =1}
+			format = "UP"
+	
+		}
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_special_cut_bg"
+	
+		}
+		buttonType = {
+			name = "XiuXian_boost_rate"
+			position = {x=26 y=35}
+			spriteType ="GFX_kaishi"
+			pdx_tooltip = "BOOST"
+			pdx_tooltip_delayed = "BOOST"
+		}
+	}
+}

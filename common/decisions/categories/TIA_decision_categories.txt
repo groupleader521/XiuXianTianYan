@@ -1,0 +1,12 @@
+
+#天衍宗决议组
+TIA_Decision = {
+	icon = ger_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	scripted_gui = CTM_xiuxian_tree
+	allowed = {
+		original_tag = TIA
+	}
+	priority = 10
+}

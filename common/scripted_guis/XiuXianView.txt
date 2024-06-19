@@ -1,0 +1,9 @@
+scripted_gui = {
+
+	CTM_xiuxian_tree = {
+		context_type = decision_category
+		window_name = "CTM_xiuxian_tree"
+	}
+	
+}
+

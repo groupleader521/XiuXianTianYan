@@ -1,0 +1,40 @@
+#天衍宗的决议
+TIA_Decision = {
+	TIA_germany_annex = {
+		icon = generic_nationalism
+		available = {
+		    GER = { 
+			    exists = yes
+				is_in_faction_with = TIA
+				NOT = {
+				    has_idea = special_puppet
+				}
+			}
+		}
+		visible = {
+			GER = { 
+			    exists = yes
+			}
+		}
+		cancel_trigger = {
+		    GER = {
+			    OR = {
+				    exists = no
+					NOT = {
+					    is_in_faction_with = TIA
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 70
+		cost = 150
+		ai_will_do = {
+			factor = 1
+		}
+		remove_effect = {
+		    annex_country = { target = GER transfer_troops = no }
+		}
+	}
+	
+}
