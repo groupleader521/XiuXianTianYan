@@ -1,0 +1,9 @@
+spriteTypes = {	
+	##################################
+	### Large images for DIVISIONS ###
+	#天衍宗
+	#修士军团
+	spriteType = { name = "GFX_unit_tia_infantry_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/goliath.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_tia_infantry_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/goliath.dds" noOfFrames = 2}
+
+}

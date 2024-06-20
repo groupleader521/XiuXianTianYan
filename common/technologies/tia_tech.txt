@@ -10,7 +10,7 @@ technologies = {#天衍宗科技树
 	@1944 = 16
 	@1945 = 18
 	@1946 = 20Z
-	tia_power_gun_weapons = {#神力加持步枪
+	tia_power_gun_weapons = {#基础改装法器
 
 		enable_equipments = {
 			tia_power_gun_equipment_0

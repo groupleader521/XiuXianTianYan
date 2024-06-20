@@ -1,0 +1,54 @@
+sub_units = {
+	#修士军团
+	tia_infantry = {
+		#兵模
+		sprite = infantry
+		#图标
+		map_icon_category = infantry
+		#优先级
+		priority = 600
+		#ai
+		ai_priority = 200
+		#初始激活
+		active = no
+		#类型
+		type = {
+			infantry
+		}
+		#组
+		group = infantry
+		#分类
+		categories = {
+			category_front_line
+			category_light_infantry
+			category_all_infantry
+			category_army
+		}
+		#宽度
+		combat_width = 2
+		
+		#Size Definitions
+		#HP
+		max_strength = 25
+		#组织度
+		max_organisation = 60
+		#恢复速度
+		default_morale = 0.3
+		#人力
+		manpower = 8
+
+		#Misc Abilities
+		#训练时间
+		training_time = 90
+		#镇压能力
+		suppression = 1
+		#重量
+		weight = 0.5
+		#补给需求
+		supply_consumption = 0.07
+		#装备需求
+		need = {
+			tia_power_gun_equipment = 80
+		}
+	}
+}

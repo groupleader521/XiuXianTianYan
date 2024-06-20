@@ -1,0 +1,168 @@
+equipments = {
+	#步兵武器
+	tia_power_gun_equipment = {#神力加持步枪原型，不要从这里改或继承任何东西，直接去后面写，装备的每一种属性都要写全面
+		year = 1936
+	
+		is_archetype = yes
+		picture = archetype_infantry_equipment		
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		active = yes
+		
+		#Misc Abilities
+		reliability = 1
+		maximum_speed = 1
+
+		#Defensive Abilities
+		defense = 1
+		breakthrough = 1
+		hardness = 1
+		armor_value = 1
+
+		#Offensive Abilities
+		soft_attack = 1
+		hard_attack = 1
+		ap_attack = 1
+		air_attack = 1
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 1
+		resources = {
+			steel = 1
+		}
+		
+	}
+	tia_power_gun_equipment_0 = {#基本神力加持步枪
+		year = 1918
+	
+		archetype = tia_power_gun_equipment
+		priority = 05
+		visual_level = 0
+
+		#Misc Abilities
+		reliability = 0.72
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 16.8
+		breakthrough = 2
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 5.4
+		hard_attack = 0.9
+		ap_attack = 3
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.52
+		resources = {
+			steel = 3
+		}
+	}
+	tia_power_gun_equipment_1 = {#初级神力加持步枪
+		year = 1936
+	
+		archetype = tia_power_gun_equipment
+		parent = tia_power_gun_equipment_0
+		priority = 10
+		visual_level = 1
+
+		#Misc Abilities
+		reliability = 0.72
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 20
+		breakthrough = 2.8
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 9
+		hard_attack = 1.5
+		ap_attack = 5.4
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.59
+		resources = {
+			steel = 3
+		}
+	}
+	tia_power_gun_equipment_2 = {#中级神力加持步枪
+		year = 1939
+	
+		archetype = tia_power_gun_equipment
+		parent = tia_power_gun_equipment_1
+		priority = 10
+		visual_level = 2
+		
+		#Misc Abilities
+		reliability = 0.68
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 24.8
+		breakthrough = 3.6
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 12.6
+		hard_attack = 2.1
+		ap_attack = 9
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.70
+		resources = {
+			steel = 4
+		}
+	}
+	tia_power_gun_equipment_3 = {#高级神力加持步枪
+		year = 1942
+	
+		archetype = tia_power_gun_equipment
+		parent = tia_power_gun_equipment_2
+		priority = 10
+		visual_level = 3
+		
+		#Misc Abilities
+		reliability = 0.56
+		maximum_speed = 4
+
+		#Defensive Abilities
+		defense = 32
+		breakthrough = 4.8
+		hardness = 0
+		armor_value = 0
+
+		#Offensive Abilities
+		soft_attack = 18
+		hard_attack = 3
+		ap_attack = 18
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.88
+		resources = {
+			steel = 5
+		}
+	}
+}

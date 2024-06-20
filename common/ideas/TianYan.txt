@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		#修仙宗门人口结构
+		XianZong_People = {
+			#remove_cost = -1
+			picture = world_king
+			modifier = {
+				conscription_factor = -1.00
+			}
+		}
+}

@@ -6,8 +6,9 @@ capital = 633
 oob = "TIA_1936"
 #初始国家精神
 add_ideas = {
-	
+	XianZong_People
 }
+add_manpower = 346
 #初始科研槽数量
 set_research_slots = 1
 #初始科技
