@@ -30,3 +30,49 @@ country_event = {
 		name = tianyan.1.a
 	}
 }
+country_event = {
+	id = tianyan.2
+	title = tianyan.2.t
+	desc = tianyan.2.d
+	#picture = GFX_events_cetiaworld
+	immediate = {
+		
+	}
+	#只能被触发
+	is_triggered_only = no
+	#只能一次
+	fire_only_once = yes
+	
+	trigger = {
+		#always = yes
+		tag = tia
+	}
+	
+	option = {
+		name = tianyan.2.a
+		country_event = tianyan.3
+	}
+}
+
+country_event = {
+	id = tianyan.3
+	title = tianyan.3.t
+	desc = tianyan.3.d
+	#picture = GFX_events_cetiaworld
+	immediate = {
+		
+	}
+	#只能被触发
+	is_triggered_only = no
+	#只能一次
+	fire_only_once = yes
+	trigger = {
+		#always = yes
+		tag = tia
+	}
+
+	option = {
+		name = tianyan.3.a
+		add_political_power = 25
+	}
+}

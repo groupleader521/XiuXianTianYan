@@ -11,7 +11,7 @@ focus_tree = {
 	continuous_focus_position = { x = 50 y = 2000 }
 	default = no
 	focus = {
-		id = tia_call_aivert
+		id = tia_politics_whathappen
 		icon = GFX_goal_generic_radar
 		cost = 2.00
 		mutually_exclusive = {
@@ -19,15 +19,16 @@ focus_tree = {
 			focus = tia_call_shilfiranlina
 			focus = tia_font_look_sitaution
 		}
+		select_effect = {
+			
+		}
 		x = 2
 		y = 0
-			completion_reward = {
-					add_popularity = {
-							ideology = communism
-							popularity = 0.03
-						}
-					country_event = { id = nstiaworld.16 }
-				}
+		completion_reward = {
+			add_political_power = 100
+			country_event = { id = tianyan.2 }
+			
+		}
 
 	}
 	
