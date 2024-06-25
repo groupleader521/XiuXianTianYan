@@ -10,3 +10,20 @@ TIA_Decision = {
 	}
 	priority = 10
 }
+
+TIA_makeplan = {#制定夺岛计划
+	icon = ger_mefo_bills
+
+	picture = GFX_decision_cat_generic_mefo_bills
+	allowed = {
+		original_tag = TIA
+		
+		
+	}
+	visible = {
+		TIA = {
+			has_completed_focus = tia_japwar_makeplan
+		}
+	}
+	priority = 10
+}

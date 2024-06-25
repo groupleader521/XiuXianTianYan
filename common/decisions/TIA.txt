@@ -38,3 +38,407 @@ TIA_Decision = {
 	}
 	
 }
+
+
+TIA_makeplan = {#夺岛计划
+
+	TIA_makeplan_take_ready = {#筹划登录
+
+		icon = generic_ignite_civil_war
+		available = {
+			has_war_with = JAP
+			JAP = {
+				or = {
+					controls_state = 645
+					controls_state = 646
+					controls_state = 648
+					controls_state = 647
+					controls_state = 684
+				}
+			}
+			
+		}
+		visible = {
+			has_war_with = JAP
+			JAP = {
+				or = {
+					controls_state = 645
+					controls_state = 646
+					controls_state = 648
+					controls_state = 647
+					controls_state = 684
+				}
+			}
+		}
+		cost = 10
+		days_remove = 7
+		fire_only_once = no
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = tia_power_small_fly_equipment_0
+				amount = 10
+			}
+		}
+	}
+
+	TIA_makeplan_take_pisimai = {#夺取pisimai海
+
+		icon = generic_ignite_civil_war
+		available = {
+			has_war_with = JAP
+			JAP = {
+				controls_state = 684
+			}
+			
+		}
+		visible = {
+			has_war_with = JAP
+			JAP = {
+				controls_state = 684
+			}
+		}
+		custom_cost_trigger = {
+			has_equipment = { tia_power_small_fly_equipment > 10 }
+		}
+		custom_cost_text = 10_tia_power_small_fly_equipment
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = tia_power_small_fly_equipment
+				amount = -10
+			}
+		}
+		remove_effect = {
+			684 = {
+				set_state_flag = TIA_makeplan_take
+			}
+		}
+	}
+	TIA_makeplan_take_feilvbin = {#夺取菲律宾海
+
+		icon = generic_ignite_civil_war
+		available = {
+			has_war_with = JAP
+			JAP = {
+				controls_state = 647
+			}
+			
+		}
+		visible = {
+			has_war_with = JAP
+			JAP = {
+				controls_state = 647
+			}
+		}
+		custom_cost_trigger = {
+			has_equipment = { tia_power_small_fly_equipment > 10 }
+		}
+		custom_cost_text = 10_tia_power_small_fly_equipment
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = tia_power_small_fly_equipment
+				amount = -10
+			}
+		}
+		remove_effect = {
+			647 = {
+				set_state_flag = TIA_makeplan_take
+			}
+		}
+	}
+	TIA_makeplan_take_maliya = {#夺取玛利亚海沟
+
+		icon = generic_ignite_civil_war
+		available = {
+			has_war_with = JAP
+			JAP = {
+				or = {
+					controls_state = 645
+					controls_state = 646
+					controls_state = 648
+				}
+				
+			}
+			
+		}
+		visible = {
+			has_war_with = JAP
+			JAP = {
+				or = {
+					controls_state = 645
+					controls_state = 646
+					controls_state = 648
+				}
+			}
+		}
+		custom_cost_trigger = {
+			has_equipment = { tia_power_small_fly_equipment > 10 }
+		}
+		custom_cost_text = 10_tia_power_small_fly_equipment
+		cost = 10
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = tia_power_small_fly_equipment
+				amount = -10
+			}
+		}
+		remove_effect = {
+			645 = {
+				set_state_flag = TIA_makeplan_take
+			}
+			646 = {
+				set_state_flag = TIA_makeplan_take
+			}
+			648 = {
+				set_state_flag = TIA_makeplan_take
+			}
+		}
+	}
+
+	TIA_makeplan_start = {#执行计划
+
+		icon = generic_ignite_civil_war
+		available = {
+			has_war_with = JAP
+			JAP = {
+				or = {
+					controls_state = 645
+					controls_state = 646
+					controls_state = 648
+					controls_state = 647
+					controls_state = 684
+				}
+			}
+			or = {
+				645 = {
+					has_state_flag = TIA_makeplan_take
+				}
+				646 = {
+					has_state_flag = TIA_makeplan_take
+				}
+				647 = {
+					has_state_flag = TIA_makeplan_take
+				}
+				684 = {
+					has_state_flag = TIA_makeplan_take
+				}
+			}
+			
+		}
+		visible = {
+			has_war_with = JAP
+			
+			JAP = {
+				or = {
+					controls_state = 645
+					controls_state = 646
+					controls_state = 648
+					controls_state = 647
+					controls_state = 684
+				}
+			}
+		}
+		cost = 0
+		days_remove = 7
+		fire_only_once = yes
+		complete_effect = {
+			add_timed_idea = {
+				idea = TIA_war_of_japan_makeplan_start
+				days = 27
+			}
+		}
+		remove_effect = {
+			#pisimai海
+			if = {
+				limit = {
+					684 = {
+						is_fully_controlled_by = jap
+						has_state_flag = TIA_makeplan_take
+
+					}
+				}
+				TIA = {
+					set_state_controller = 684
+				}
+				684 = {
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13035
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13036
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13034
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 2489
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13033
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13032
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13031
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13030
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13029
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13028
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 13027
+						owner = ROOT
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = tia_power_small_fly_equipment_0
+					amount = 10
+				}
+				
+			}
+
+			if = {
+				limit = {
+					647 = {
+						is_fully_controlled_by = jap
+						has_state_flag = TIA_makeplan_take
+
+					}
+				}
+				TIA = {
+					set_state_controller = 647
+				}
+				647 = {
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5"
+						prioritize_location = 12103
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5"
+						prioritize_location = 4357
+						owner = ROOT
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = tia_power_small_fly_equipment_0
+					amount = 10
+				}
+				
+			}
+			if = {
+				limit = {
+					645 = {
+						is_fully_controlled_by = jap
+						has_state_flag = TIA_makeplan_take
+
+					}
+				}
+				TIA = {
+					set_state_controller = 645
+				}
+				645 = {
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+				}
+				
+			}
+			if = {
+				limit = {
+					646 = {
+						is_fully_controlled_by = jap
+						has_state_flag = TIA_makeplan_take
+
+					}
+					
+				}
+				TIA = {
+					set_state_controller = 646
+				}
+				646 = {
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 3995
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 12023
+						owner = ROOT
+					}
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						prioritize_location = 12024
+						owner = ROOT
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = tia_power_small_fly_equipment_0
+					amount = 10
+				}
+			}
+			if = {
+				limit = {
+					648 = {
+						is_fully_controlled_by = jap
+						has_state_flag = TIA_makeplan_take
+
+					}
+					
+				}
+				TIA = {
+					set_state_controller = 648
+				}
+				648 = {
+					create_unit = { 
+						division = "name = \"修士军团\" division_template = \"修士军团\" start_experience_factor = 0.5" 
+						owner = ROOT
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = tia_power_small_fly_equipment_0
+					amount = 10
+				}
+			}
+		}
+	}
+}

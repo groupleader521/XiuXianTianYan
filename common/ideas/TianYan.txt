@@ -8,4 +8,51 @@ ideas = {
 				conscription_factor = -1.00
 			}
 		}
+		#制定夺岛计划
+		TIA_war_of_japan_makeplan = {
+
+			picture = FRA_scw_intervention_nationalists_focus		
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			cost = 5
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.15
+			}
+
+		}
+
+		#启动夺岛计划
+		TIA_war_of_japan_makeplan_start = {
+
+			picture = FRA_scw_intervention_nationalists_focus		
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			cost = 5
+			
+			targeted_modifier = {
+				tag = TIA
+				attack_bonus_against = 30
+				defense_bonus_against = 30
+			}
+		}
+	}
 }

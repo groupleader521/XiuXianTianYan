@@ -3790,7 +3790,7 @@ guiTypes = {
 			}
 			
 			gridboxtype = {
-				name = "tia_power_tank_small_weapons_tree"
+				name = "tia_power_small_fly_weapons_tree"
 				position = { x = 140 y = 600 }
 				#size = { width = 420 height = 500 }
 				slotsize = { width = 70 height = 70 }

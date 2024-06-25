@@ -10,15 +10,10 @@ focus_tree = {
 	}
 	continuous_focus_position = { x = 50 y = 2000 }
 	default = no
-	focus = {
-		id = tia_politics_whathappen
+	focus = {#紧急会议
+		id = tia_japwar_whathappen
 		icon = GFX_goal_generic_radar
 		cost = 2.00
-		mutually_exclusive = {
-			focus = tia_call_lena
-			focus = tia_call_shilfiranlina
-			focus = tia_font_look_sitaution
-		}
 		select_effect = {
 			
 		}
@@ -26,10 +21,151 @@ focus_tree = {
 		y = 0
 		completion_reward = {
 			add_political_power = 100
-			country_event = { id = tianyan.2 }
+			country_event =  tianyan.2
+			
+			
+			
+		}
+
+	}
+	focus = {#制定夺岛计划
+		id = tia_japwar_makeplan
+		icon = GFX_goal_generic_radar
+		cost = 2.00
+		prerequisite = {
+			focus = tia_japwar_whathappen
+		}
+		select_effect = {
+			
+		}
+		relative_position_id = tia_japwar_whathappen
+		x = 0
+		y = 1
+		completion_reward = {
+			unlock_decision_category_tooltip = TIA_makeplan
+			add_ideas = TIA_war_of_japan_makeplan
+			add_political_power = 75
+			
+		}
+
+	}
+	focus = {#建立与日本的沟通枢纽
+		id = tia_japwar_createconnect
+		icon = GFX_goal_generic_radar
+		cost = 2.00
+		prerequisite = {
+			focus = tia_japwar_makeplan
+		}
+		select_effect = {
+			
+		}
+		bypass = {
+			not = {has_war_with = JAP}
+				and = {
+						owns_state = 645
+						owns_state = 646
+						owns_state = 648
+						owns_state = 647
+						owns_state = 684
+			}
+		}
+		
+		available = {
+			has_war_with = JAP
+				or = {
+						controls_state = 645
+						controls_state = 646
+						controls_state = 648
+						controls_state = 647
+						controls_state = 684
+				}
+			}
+		relative_position_id = tia_japwar_makeplan
+		x = 0
+		y = 1
+		completion_reward = {
+			JAP = {
+				country_event = tianyan.4
+			}
+			
+		}
+
+	}
+
+	focus = {#核心化本土
+		id = tia_japwar_coreme
+		icon = GFX_goal_generic_radar
+		cost = 2.00
+		prerequisite = {
+			focus = tia_japwar_createconnect
+		}
+		select_effect = {
+			
+		}
+		available = {
+			OR = {
+				NOT = {has_war_with = JAP}
+			
+				AND = {
+					owns_state = 645
+					owns_state = 646
+					owns_state = 648
+					owns_state = 647
+					owns_state = 684
+					owns_state = 633
+				}
+			}
+		}
+			
+			
+		relative_position_id = tia_japwar_createconnect
+		x = 0
+		y = 1
+		completion_reward = {
+			645 = {
+				add_core_of = root
+			}
+			646 = {
+				add_core_of = root
+			}
+			648 = {
+				add_core_of = root
+			}
+			647 = {
+				add_core_of = root
+			}
+			684 = {
+				add_core_of = root
+			}
+			633 = {
+				add_core_of = root
+			}
+			add_stability = 0.2
 			
 		}
 
 	}
 	
+	#工业线
+	focus = {#工业评估
+		id = tia_industry_test
+		icon = GFX_goal_generic_radar
+		cost = 2.00
+		select_effect = {
+			
+		}
+		available = {
+				NOT = {has_war_with = JAP}
+			
+		}
+			
+			
+		x = 5
+		y = 0
+		completion_reward = {
+			country_event = tianyan.7
+			
+		}
+
+	}
 }

@@ -1,6 +1,6 @@
 equipments = {
 	#步兵武器
-	tia_power_gun_equipment = {#神力加持步枪原型，不要从这里改或继承任何东西，直接去后面写，装备的每一种属性都要写全面
+	tia_power_gun_equipment = {#改装法器原型
 		year = 1936
 	
 		is_archetype = yes
@@ -38,7 +38,7 @@ equipments = {
 		}
 		
 	}
-	tia_power_gun_equipment_0 = {#基本神力加持步枪
+	tia_power_gun_equipment_0 = {#基础改装法器
 		year = 1918
 	
 		archetype = tia_power_gun_equipment
@@ -50,15 +50,15 @@ equipments = {
 		maximum_speed = 4
 
 		#Defensive Abilities
-		defense = 16.8
+		defense = 30.5
 		breakthrough = 2
 		hardness = 0
 		armor_value = 0
 
 		#Offensive Abilities
-		soft_attack = 5.4
-		hard_attack = 0.9
-		ap_attack = 3
+		soft_attack = 20.5
+		hard_attack = 6.8
+		ap_attack = 12
 		air_attack = 0
 
 		#Space taken in convoy
@@ -165,4 +165,96 @@ equipments = {
 			steel = 5
 		}
 	}
+
+
+	#战斗机
+	tia_power_small_fly_equipment = {#飞行法器原型
+		year = 1933
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_fighter_equipment
+		is_buildable = no
+		type = { fighter  }
+		group_by = archetype
+		sprite = light_plane
+		air_map_icon_frame = 1
+        allow_mission_type = {
+			training
+			air_superiority
+			interception
+		}
+		
+		interface_category = interface_category_air
+		
+		# Fighter
+		interface_overview_category_index = 1
+
+		upgrades = {
+			plane_gun_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - low damage / high hit chance / easy to hurt
+		naval_strike_attack = 1
+		naval_strike_targetting = 10
+
+		#Space taken in convoy
+		lend_lease_cost = 8
+		
+		build_cost_ic = 26.4
+		resources = {
+			#oil = 1
+			aluminium = 2
+			rubber = 1
+		}
+		
+		manpower = 1
+		fuel_consumption = 0.21
+		carrier_capable = yes
+	}
+    
+	# Early Fighter
+	tia_power_small_fly_equipment_0 = {#下品飞行法器
+		year = 1933
+
+		archetype = tia_power_small_fly_equipment
+		priority = 5
+        upgrades = {
+			plane_gun_upgrade
+			plane_range_upgrade
+			plane_engine_upgrade
+			plane_reliability_upgrade
+		}
+		reliability = 0.6
+		air_range = 570
+		maximum_speed = 330
+		air_agility = 45
+		air_attack = 11
+		air_defence = 8
+
+		naval_strike_attack = 1
+		naval_strike_targetting = 10
+        surface_detection = 10
+        sub_detection = 2.5
+        
+        lend_lease_cost = 8
+
+		build_cost_ic = 22
+		resources = {
+			#oil = 1
+			aluminium = 2
+			rubber = 1
+		}
+
+		manpower = 1
+		fuel_consumption = 0.21
+		carrier_capable = yes
+	}
+
 }

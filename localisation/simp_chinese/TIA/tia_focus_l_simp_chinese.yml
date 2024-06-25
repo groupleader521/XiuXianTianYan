@@ -1,3 +1,29 @@
 ﻿l_simp_chinese:
- tia_politics_whathappen:0 "紧急会议"
- tia_politics_whathappen_desc:0 "我们刚来到这个世界就被这个世界的原住民疯狂的攻击"
+tia_japwar_whathappen:0 "紧急会议"
+tia_japwar_whathappen_desc:0 "我们刚来到这个世界就被这个世界的原住民疯狂的攻击，我们必须竭尽全力生存下来，并且摸清情况，反击我们的敌人。"
+tia_japwar_makeplan:0 "制定夺岛计划"
+tia_japwar_makeplan_desc:0 "既然已经知道了这个攻击我们的国家所在方位，我们必须立刻进行回击，就从夺取附近的小岛开始。"
+tia_japwar_createconnect:0 "建立与日本的通讯"
+tia_japwar_createconnect_desc:0 "我们已经占领了日本在太平洋的所有领土，考虑我们的情况不适合与这个世界的主要国家长时间作战，我们应该考虑联系日本结束这场战争"
+tia_japwar_coreme:0 "核心化本土"
+tia_japwar_coreme_desc:0 "战争结束了，我们可以好好发展一下我们的势力了"
+tia_industry_test:0 "工业化评估"
+tia_industry_test_desc:0 "这个世界的灵气太过稀薄，我们想要壮大自身还需融入到这个世界中"
+
+
+#天衍宗决议本地化
+TIA_makeplan:0 "制定夺岛计划"
+TIA_makeplan_take_pisimai:0 "制定夺取埤斯麦海岛屿的计划"
+TIA_makeplan_take_pisimai_desc:0 "我们将准备十把飞行法器，届时派遣修士军团登岛，守住战线"
+TIA_makeplan_take_feilvbin:0 "制定夺取菲律宾海岛屿的计划"
+TIA_makeplan_take_feilvbin_desc:0 "我们将准备十把飞行法器，届时派遣修士军团登岛，守住战线"
+TIA_makeplan_take_maliya:0 "制定夺取玛利亚海沟岛屿的计划"
+TIA_makeplan_take_maliya_desc:0 "我们将准备十把飞行法器，届时派遣修士军团登岛，守住战线"
+10_tia_power_small_fly_equipment_blocked:0 "10飞行法器"
+10_tia_power_small_fly_equipment:0 "10飞行法器"
+TIA_makeplan_start:0 "执行计划"
+TIA_makeplan_start_desc:0 "我们立刻执行此前筹划好的计划，立刻行动不容有误，派遣修士军团快速占领目标岛屿"
+TIA_makeplan_take_ready:0 "筹划登陆"
+TIA_makeplan_take_ready_desc:0 "当务之急是催促炼器堂尽快制作登陆所需要的飞行法器"
+TIA_makeplan_take:0 "已制定登岛计划"
+

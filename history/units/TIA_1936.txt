@@ -67,6 +67,14 @@ units = {
 		start_equipment_factor = 1
 
 	}
+	division = { 
+		name =  "修士军团8"
+		location = 13041
+		division_template = "修士军团"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+
+	}
 	
 		
 }

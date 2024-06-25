@@ -5,7 +5,7 @@
 add_namespace = tianyan
 
 # Japanese Stage Border Incident
-country_event = {
+country_event = {#天衍宗介绍
 	id = tianyan.1
 	title = tianyan.1.t
 	desc = tianyan.1.d
@@ -30,7 +30,7 @@ country_event = {
 		name = tianyan.1.a
 	}
 }
-country_event = {
+country_event = {#会议1
 	id = tianyan.2
 	title = tianyan.2.t
 	desc = tianyan.2.d
@@ -39,7 +39,7 @@ country_event = {
 		
 	}
 	#只能被触发
-	is_triggered_only = no
+	is_triggered_only = yes
 	#只能一次
 	fire_only_once = yes
 	
@@ -54,7 +54,7 @@ country_event = {
 	}
 }
 
-country_event = {
+country_event = {#会议2
 	id = tianyan.3
 	title = tianyan.3.t
 	desc = tianyan.3.d
@@ -63,7 +63,7 @@ country_event = {
 		
 	}
 	#只能被触发
-	is_triggered_only = no
+	is_triggered_only = yes
 	#只能一次
 	fire_only_once = yes
 	trigger = {
@@ -74,5 +74,115 @@ country_event = {
 	option = {
 		name = tianyan.3.a
 		add_political_power = 25
+	}
+}
+
+
+country_event = {#日本与天衍宗的和谈
+	id = tianyan.4
+	title = tianyan.4.t
+	desc = tianyan.4.d
+	#picture = GFX_events_cetiaworld
+	immediate = {
+		
+	}
+	#只能被触发
+	is_triggered_only = yes
+	#只能一次
+	fire_only_once = yes
+	trigger = {
+		#always = yes
+		tag = jap
+	}
+
+	option = {
+		name = tianyan.4.a
+		white_peace = FROM
+		add_political_power = -100
+		add_war_support = -0.1
+		add_stability  = -0.1
+		FROM = {
+			set_state_owner = 645
+			set_state_owner = 646
+			set_state_owner = 648
+			set_state_owner = 647
+			set_state_owner = 684
+			country_event = tianyan.5
+		}
+	}
+	option = {
+		name = tianyan.4.b
+		add_political_power = -100
+		country_event = tianyan.6
+	}
+}
+
+country_event = {#天衍宗收到日本同意的消息
+	id = tianyan.5
+	title = tianyan.5.t
+	desc = tianyan.5.d
+	#picture = GFX_events_cetiaworld
+	immediate = {
+		
+	}
+	#只能被触发
+	is_triggered_only = yes
+	#只能一次
+	fire_only_once = yes
+	trigger = {
+		#always = yes
+		tag = jap
+	}
+
+	option = {
+		name = tianyan.5.a
+	}
+}
+country_event = {#天衍宗收到日本拒绝的消息
+	id = tianyan.6
+	title = tianyan.6.t
+	desc = tianyan.6.d
+	#picture = GFX_events_cetiaworld
+	immediate = {
+		
+	}
+	#只能被触发
+	is_triggered_only = yes
+	#只能一次
+	fire_only_once = yes
+	trigger = {
+		#always = yes
+		tag = jap
+	}
+
+	option = {
+		name = tianyan.6.a
+	}
+}
+country_event = {#工业化评估
+	id = tianyan.7
+	title = tianyan.7.t
+	desc = tianyan.7.d
+	#picture = GFX_events_cetiaworld
+	immediate = {
+		
+	}
+	#只能被触发
+	is_triggered_only = yes
+	#只能一次
+	fire_only_once = yes
+	trigger = {
+		#always = yes
+		tag = TIA
+	}
+
+	option = {
+		name = tianyan.7.a
+		add_tech_bonus = {
+			name = CHI_unified_industrial_planning
+			bonus = 1.0
+			uses = 4
+			category = industry
+		}
 	}
 }

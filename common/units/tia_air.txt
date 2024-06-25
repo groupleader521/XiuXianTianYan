@@ -1,0 +1,12 @@
+sub_units = {
+	tia_small_fly_weapons = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = fighter
+		need = { tia_power_small_fly_equipment = 1 }
+		categories = { category_fighter }
+        land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
+}

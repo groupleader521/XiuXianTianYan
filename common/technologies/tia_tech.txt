@@ -618,14 +618,14 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	tia_power_tank_small_weapons = {#小型神能坦克炮
+	tia_power_small_fly_weapons = {#下品飞行法器
 
-		enable_equipment_modules = {
-			tia_tank_small_1
+		enable_equipments = {
+			tia_power_small_fly_equipment_0
 		}
 		
 		path = {
-			leads_to_tech = tia_power_tank_small_weapons2
+			leads_to_tech = tia_power_small_fly_weapons2
 			research_cost_coeff = 1
 		}
 
@@ -645,14 +645,14 @@ technologies = {#天衍宗科技树
 			factor = 1
 		}
 	}
-	tia_power_tank_small_weapons2 = {#中型神能坦克炮
+	tia_power_small_fly_weapons2 = {#中品飞行法器
 
 		enable_equipment_modules = {
 			tia_tank_small_2
 		}
 		
 		path = {
-			leads_to_tech = tia_power_tank_small_weapons3
+			leads_to_tech = tia_power_small_fly_weapons3
 			research_cost_coeff = 1
 		}
 
@@ -676,14 +676,14 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	tia_power_tank_small_weapons3 = {#高型神能坦克炮
+	tia_power_small_fly_weapons3 = {#上品飞行法器
 
 		enable_equipment_modules = {
 			tia_tank_small_3
 		}
 		
 		path = {
-			leads_to_tech = tia_power_tank_small_weapons4
+			leads_to_tech = tia_power_small_fly_weapons4
 			research_cost_coeff = 1
 		}
 
@@ -707,7 +707,7 @@ technologies = {#天衍宗科技树
 			}
 		}
 	}
-	tia_power_tank_small_weapons4 = {#终型神能坦克炮
+	tia_power_small_fly_weapons4 = {#极品飞行法器
 
 		enable_equipment_modules = {
 			tia_tank_small_4

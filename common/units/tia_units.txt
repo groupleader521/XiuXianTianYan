@@ -35,7 +35,7 @@ sub_units = {
 		#恢复速度
 		default_morale = 0.3
 		#人力
-		manpower = 8
+		manpower = 3
 
 		#Misc Abilities
 		#训练时间
@@ -48,7 +48,7 @@ sub_units = {
 		supply_consumption = 0.07
 		#装备需求
 		need = {
-			tia_power_gun_equipment = 80
+			tia_power_gun_equipment = 30
 		}
 	}
 }

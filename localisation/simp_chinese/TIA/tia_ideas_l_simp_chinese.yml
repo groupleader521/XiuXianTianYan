@@ -1,4 +1,9 @@
 ﻿#天衍宗的国家精神
 l_simp_chinese:
- XianZong_People:0 "修仙宗门人口结构"
- XianZong_People_desc:0 "我们突然出现在这个小岛上，我们宗门无法随意征召这些凡人来加入我们"
+XianZong_People:0 "修仙宗门人口结构"
+XianZong_People_desc:0 "我们突然出现在这个小岛上，我们宗门无法随意征召这些凡人来加入我们"
+
+TIA_war_of_japan_makeplan:0 "天衍宗对日作战"
+TIA_war_of_japan_makeplan_desc:0 "我们制定了第一步的反攻计划，让敌人付出代价"
+TIA_war_of_japan_makeplan_start:0 "启动夺岛计划"
+TIA_war_of_japan_makeplan_start_desc:0 "此行与我们有利，务必快速夺下附近岛屿"
